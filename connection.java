@@ -1,3 +1,4 @@
+import java.sql.Connection;
 import java.sql.*;
 
 public class connection {
@@ -7,27 +8,30 @@ public class connection {
         Statement st = null;
         ResultSet rs = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "root", "root");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/ORCL", "fred", "flintstone");
             Statement stmt = con.createStatement();
-            rs = stmt.executeQuery("select * from " + tableName);
+            rs = stmt.executeQuery("SELECT * FROM " + tableName);
 
             ResultSetMetaData rsmd = rs.getMetaData();
             int colCount = rsmd.getColumnCount();
 
-            StringBuilder b = new StringBuilder("<CustomerDetails>\n");
+            StringBuilder b = new StringBuilder("<StructureSpecific>\n");
 
-            while (rs.next()) {
-                b.append("<Customer>");
+            
+            while(rs.next()) {
+            	System.out.println(rs.getInt(1));
+                b.append("<StructureSpecificData>");
                 for (int i = 1; i <= colCount; i++) {
                     String columnName = rsmd.getColumnName(i);
+                    System.out.println(columnName);
                     b.append('<').append(columnName).append('>');
                     b.append(rs.getObject(i));
                     b.append("</").append(columnName).append('>');
                 }
-                b.append("</Customer>\n");
+                b.append("</StructureSpecificData>\n");
             }
-            b.append("</CustomerDetails>");
+            b.append("</StructureSpecific>");
             return b.toString();
         } catch (SQLException e) {
             throw e;
@@ -53,7 +57,7 @@ public class connection {
     }
 
     public static void main(String[] args) throws Exception {
-        String str = getTableData("cuslogin");
+        String str = getTableData("DIMENSIONTYPEMASTERS");
         System.out.println(str);
     }
 }
