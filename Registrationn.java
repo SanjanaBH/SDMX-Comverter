@@ -42,7 +42,7 @@ class MyFrame
 		c.setLayout(null);
 		
 		Toolkit t = Toolkit.getDefaultToolkit();
-		ImageIcon image = new ImageIcon(" C:\\Users\\harshada.sawant\\Desktop\\logo1.png ");
+		ImageIcon image = new ImageIcon("C:\\Users\\harshada.sawant\\Desktop\\logo2.png");
 		
 		JLabel imageLabel = new JLabel(image);
 		c.add(imageLabel);
@@ -55,160 +55,169 @@ class MyFrame
 		
 		title = new JLabel("SDMX CONVERTER");
 		title.setFont(new Font("Arial", Font.PLAIN, 30));
-		title.setSize(300, 30);
-		title.setLocation(430, 80);
+		title.setSize(800, 30);
+		title.setLocation(500, 40);
 		c.add(title);
 		
 		title = new JLabel("Mapping Submission");
-		title.setFont(new Font("Arial", Font.PLAIN, 25));
-		title.setSize(300, 30);
-		title.setLocation(450, 220);
+		title.setFont(new Font("Arial", Font.PLAIN, 20));
+		title.setSize(600, 80);
+		title.setLocation(520, 150);
 		c.add(title);
 
-		/*name = new JLabel("Element Name");
+		name = new JLabel("Element Name");
 		name.setFont(new Font("Arial", Font.PLAIN, 12));
 		name.setSize(100, 20);
-		name.setLocation(100, 100);
+		name.setLocation(150, 230);
 		c.add(name);
 
 		tname = new JTextField();
 		tname.setFont(new Font("Arial", Font.PLAIN, 12));
 		tname.setSize(190, 20);
-		tname.setLocation(200, 100);
+		tname.setLocation(250, 230);
 		c.add(tname);
 		
 		name = new JLabel("Version");
 		name.setFont(new Font("Arial", Font.PLAIN, 12));
 		name.setSize(100, 20);
-		name.setLocation(480, 100);
+		name.setLocation(550, 230);
 		c.add(name);
 
 		tname = new JTextField();
 		tname.setFont(new Font("Arial", Font.PLAIN, 12));
 		tname.setSize(190, 20);
-		tname.setLocation(550, 100);
-		c.add(tname);*/
-
-		mno = new JLabel("Doubtful");
+		tname.setLocation(640, 230);
+		c.add(tname);
+		
+		mno = new JLabel("Dimension 1");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(150, 280);
+		mno.setLocation(130, 280);
+		c.add(mno);
+		
+		mno = new JLabel("Doubtful");
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
+		mno.setSize(100, 20);
+		mno.setLocation(130, 320);
 		c.add(mno);
 		
 		mno = new JLabel("up to 1 year");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
 		mno.setSize(100, 20);
-		mno.setLocation(150, 300);
+		mno.setLocation(130, 340);
 		c.add(mno);
 
-		mno = new JLabel("Domestic");
+		mno = new JLabel("Dimension 2");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(250, 280);
+		mno.setLocation(230, 280);
+		c.add(mno);
+		
+		mno = new JLabel("Domestic");
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
+		mno.setSize(100, 20);
+		mno.setLocation(230, 320);
 		c.add(mno);
 		
 		mno = new JLabel("Operations");
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
+		mno.setSize(100, 20);
+		mno.setLocation(230, 340);
+		c.add(mno);
+		
+		mno = new JLabel("Dimension 3");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(250, 300);
+		mno.setLocation(330, 280);
 		c.add(mno);
 		
 		mno = new JLabel("Gross Loans");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
 		mno.setSize(100, 20);
-		mno.setLocation(350, 280);
+		mno.setLocation(330, 320);
 		c.add(mno);
 		
 		mno = new JLabel("and Advances");
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
+		mno.setSize(100, 20);
+		mno.setLocation(330, 340);
+		c.add(mno);
+		
+		mno = new JLabel("Dimension 4");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(350, 300);
+		mno.setLocation(430, 280);
 		c.add(mno);
 		
 		mno = new JLabel("Outstanding");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
 		mno.setSize(100, 20);
-		mno.setLocation(450, 280);
+		mno.setLocation(430, 320);
 		c.add(mno);
 		
+		
 		mno = new JLabel("Amount");
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
+		mno.setSize(100, 20);
+		mno.setLocation(430, 340);
+		c.add(mno);
+		
+		mno = new JLabel("Dimension 5");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(450, 300);
+		mno.setLocation(530, 280);
 		c.add(mno);
 		
 		mno = new JLabel("Indian");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
 		mno.setSize(100, 20);
-		mno.setLocation(550, 280);
+		mno.setLocation(530, 320);
 		c.add(mno);
 		
 		mno = new JLabel("Rupee");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
+		mno.setFont(new Font("Arial", Font.PLAIN, 13));
 		mno.setSize(100, 20);
-		mno.setLocation(550, 300);
+		mno.setLocation(530, 340);
 		c.add(mno);
 		
 		mno = new JLabel("Table name ");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(650, 280);
+		mno.setLocation(680, 280);
 		c.add(mno);
 		
 		mno = new JLabel("Column name");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(750, 280);
+		mno.setLocation(800, 280);
 		c.add(mno);
 		
 		mno = new JLabel("Item Column");
 		mno.setFont(new Font("Arial", Font.PLAIN, 12));
 		mno.setSize(100, 20);
-		mno.setLocation(850, 280);
+		mno.setLocation(920, 280);
 		c.add(mno);
 		
-		/*mno = new JLabel("Dimension 4");
-		mno.setFont(new Font("Arial", Font.PLAIN, 12));
-		mno.setSize(100, 20);
-		mno.setLocation(750, 180);
-		c.add(mno);*/
 		
 		tmno = new JTextField();
 		tmno.setFont(new Font("Arial", Font.PLAIN, 10));
 		tmno.setSize(100, 20);
-		tmno.setLocation(650, 300);
+		tmno.setLocation(680, 320);
 		c.add(tmno);
 
 		tmno = new JTextField();
 		tmno.setFont(new Font("Arial", Font.PLAIN, 10));
 		tmno.setSize(100, 20);
-		tmno.setLocation(750, 300);
+		tmno.setLocation(800, 320);
 		c.add(tmno);
 		
 		tmno = new JTextField();
 		tmno.setFont(new Font("Arial", Font.PLAIN, 10));
 		tmno.setSize(100, 20);
-		tmno.setLocation(850, 300);
+		tmno.setLocation(920, 320);
 		c.add(tmno);
 		
-		/*tmno = new JTextField();
-		tmno.setFont(new Font("Arial", Font.PLAIN, 10));
-		tmno.setSize(100, 20);
-		tmno.setLocation(750, 200);
-		c.add(tmno);
-
-		/*add = new JLabel("Address");
-		add.setFont(new Font("Arial", Font.PLAIN, 20));
-		add.setSize(100, 20);
-		add.setLocation(100, 300);
-		c.add(add);
-
-		tadd = new JTextArea();
-		tadd.setFont(new Font("Arial", Font.PLAIN, 15));
-		tadd.setSize(200, 75);
-		tadd.setLocation(200, 300);
-		tadd.setLineWrap(true);
-		c.add(tadd);*/
+	
 
 		term = new JCheckBox("Validation");
 		term.setFont(new Font("Arial", Font.PLAIN, 15));
@@ -230,13 +239,7 @@ class MyFrame
 		reset.addActionListener(this);
 		c.add(reset);
 
-		/*tout = new JTextArea();
-		tout.setFont(new Font("Arial", Font.PLAIN, 15));
-		tout.setSize(300, 400);
-		tout.setLocation(500, 100);
-		tout.setLineWrap(true);
-		tout.setEditable(false);
-		c.add(tout);*/
+	
 
 		res = new JLabel("");
 		res.setFont(new Font("Arial", Font.PLAIN, 20));
@@ -244,12 +247,7 @@ class MyFrame
 		res.setLocation(100, 500);
 		c.add(res);
 
-		/*resadd = new JTextArea();
-		resadd.setFont(new Font("Arial", Font.PLAIN, 15));
-		resadd.setSize(200, 75);
-		resadd.setLocation(580, 175);
-		resadd.setLineWrap(true);
-		c.add(resadd);*/
+		
         
 		JTextField footer = new JTextField();
 		footer.setText("© Reserve Bank of India. All Rights Reserved");
@@ -274,30 +272,14 @@ class MyFrame
 					+ tname.getText() + "\n"
 					+ "Database Table : "
 					+ tmno.getText() + "\n";
-				/*if (male.isSelected())
-					data1 = "Gender : Male"
-							+ "\n";
-				else
-					data1 = "Gender : Female"
-							+ "\n";
-				/*String data2
-					= "DOB : "
-					+ (String)date.getSelectedItem()
-					+ "/" + (String)month.getSelectedItem()
-					+ "/" + (String)year.getSelectedItem()
-					+ "\n";*/
+				
 
 				//String data3 = "Address : " + tadd.getText();
 				tout.setText(data);
 				tout.setEditable(false);
 				res.setText("Mapping Successfully Done...");
 			}
-			/*else {
-				tout.setText("");
-				resadd.setText("");
-				res.setText("Please accept the"
-							+ " terms & conditions..");
-			}*/
+			
 		}
 
 		else if (e.getSource() == reset) {
@@ -308,9 +290,7 @@ class MyFrame
 			res.setText(def);
 			tout.setText(def);
 			term.setSelected(false);
-			//date.setSelectedIndex(0);
-			//month.setSelectedIndex(0);
-			//year.setSelectedIndex(0);
+	
 			resadd.setText(def);
 		}
 	}
